@@ -1,6 +1,6 @@
 # RateHub Coding Style Guide
 
-*Provide high-level design and code error checking and establish a common coding style to reduce time to understand code*
+*An opinionated style guide which aims to improve readability and maintainability of code within RateHub*
 
 ## Goals
 * attempt to follow idiomatic practices and style patterns of a particular language/ecosystem.
