@@ -1,8 +1,12 @@
 # RateHub React Style guide
 *Company-wide coding style checker for working with React*
 
-## Packages Used:
-* [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@7.7.0: this is an industry-standard collection of linting rules.
+# Package Choices
+* [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react): industry-standard collection of linting rules for React.  We are explicitly choosing the severity of each rule, discussed below.
+* [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y): industry-standard accessibility checker when using React.  For this languge, we have chosen the ['strict'](https://github.com/evcohen/eslint-plugin-jsx-a11y#difference-between-recommended-and-strict-mode) rule set because accessibility is a first-class citizen in our designs.  If deviations from the rule set are made, they will be listed and discussed here.
+
+# Rule Discussion
+Below is a discussion of the chosen linting rules, their classification and a justification as to why it has been selected.
 
 ## Code Smells & Common Errors
 These rules look for anti-patterns and common implementation errors.  When detected, these often indicate a design in need of refactoring, or an improper/accidental use of a function.
@@ -11,11 +15,11 @@ These rules look for anti-patterns and common implementation errors.  When detec
 * [react/button-has-type](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/button-has-type.md): within React, button is often used for behaviours other than submit.  If the intended behaviour of the button is submit, require it to be explicitly stated.
 * [react/no-children-prop](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-children-prop.md): passing children as props is confusing and likely unintended by the developer.  Use the built-in method of specifying children.
 * [react/default-props-match-prop-types](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/default-props-match-prop-types.md): if a default prop value is listed, but the value is required, what was the original intent?  This often indicates unclear requirements or a missed line in a refactor.
-* [react/no-access-state-in-setstate](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-access-state-in-setstate.md): using this.state within setState can result in undefined behaviour, as setState is asynchronous.
+* [react/no-access-state-in-setstate](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-access-state-in-setstate.md): using `this.state` within setState can result in undefined behaviour, as setState is asynchronous.
 * [react/no-array-index-key](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-array-index-key.md): array indicies make weak keys; key should refer to the object/value rather than their location within their containing array, as their location can change if the array is modified.
-* [react/no-did-update-set-state](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-did-update-set-state.md): use of setState could trigger an infite loop of refreshes.  Even when only a single Signals a poorly thought-out data flow.
+* [react/no-did-update-set-state](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-did-update-set-state.md): use of `setState` could trigger an infite loop of refreshes.  Even when used defencively, indicates a poorly thought-out data flow.
 * [react/no-direct-mutation-state](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-direct-mutation-state.md): directly mutating state goes against the core philosophy of React
-* [react/no-redundant-should-component-update](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-redundant-should-component-update.md): pure components should not implement this, as it clashes with the concept of a pure function.
+* [react/no-redundant-should-component-update](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-redundant-should-component-update.md): pure components should not implement this callback, as it clashes with the concept of a pure function.
 * [react/no-render-return-value](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-render-return-value.md): the output of a Component render should never be of concern to a consumer, as it requires inapropriate familiary with the implementation of a Component.
 * [react/no-typos](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-typos.md): find common casing mistakes.  Even when intended, it needlessly increases the chance a reader may misunderstand the purpose of a declaration.
 * [react/no-this-in-sfc](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-this-in-sfc.md): meaning of *this* within a SFC can be different than a developer expects.  Use of *this* often indicates a missed line when converting from a state-based Component.
