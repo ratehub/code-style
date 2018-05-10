@@ -1,9 +1,8 @@
 # RateHub React Style guide
 *Company-wide coding style checker for working with React*
 
-## Packages included:
-* [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react): 7.7.0
-
+## Packages Used:
+* [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@7.7.0: this is an industry-standard collection of linting rules.
 
 ## Code Smells & Common Errors
 These rules look for anti-patterns and common implementation errors.  When detected, these often indicate a design in need of refactoring, or an improper/accidental use of a function.
@@ -32,16 +31,13 @@ These rules look for anti-patterns and common implementation errors.  When detec
 * [react/jsx-no-literals](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-no-literals.md): all developments are to be done as i18n, therefore string literals should not be emitted directly.
 * [react/jsx-no-undef](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-no-undef.md): all variables should be defined within the file they are used.  Circumventing this using global definitions makes files harder to reason about, and introduces maintainability concerns.
 
-
 ### Warnings:
 * [react/no-deprecated](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-deprecated.md): generally, behaviours are depreciated for a reason.  In order to keep current with a framework, any code using depreciated functionality should be refactored to no longer require it.
-* [react/no-did-mount-set-state](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-did-mount-set-state.md): use of `setState` within `componentDidMount` will trigger additional refreshes, and generally signals a poorly thought-out data flow.
 * [react/no-find-dom-node](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-find-dom-node.md): external users of a Component should never be concerned with the DOM implementation.  When this functionality is desired internally within a Component, there are better systems (ref) to refer to a DOM node previously produced.
 
 ### Parking Lot/Future Roadmap:
 * [react/jsx-no-bind](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-no-bind.md): if a function is designed such that binding is required, it can be easy to introduce bugs by forgetting the bind.  If an arrow function is used, it places unnecessary strain on the garbage collector.  A proper investigation into the affected edge cases should be done before assigning a warning/error classification.
-
-
+* [react/no-did-mount-set-state](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-did-mount-set-state.md): use of `setState` within `componentDidMount` will trigger additional refreshes, and generally signals a poorly thought-out data flow.
 
 
 ## Cognitive Load & Maintainability Concerns
