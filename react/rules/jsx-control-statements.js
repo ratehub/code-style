@@ -1,5 +1,5 @@
 module.exports = {
-   
+
    "parserOptions": {
       "ecmaFeatures": {
         "jsx": true,
@@ -7,11 +7,10 @@ module.exports = {
     },
     
    "plugins": [
-     'jsx-a11y'
-   ],
+      "jsx-control-statements"
+    ],
 
-   "extends": [
-      "plugin:jsx-a11y/strict"
-   ]
-
+    "extends": [
+       "plugin:jsx-control-statements/recommended"
+    ]
 };
