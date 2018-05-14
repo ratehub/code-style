@@ -1,8 +1,7 @@
 {
   "name": "@ratehub/eslint-config-react",
-  "version": "0.0.1",
-  "private": true,
-  "description": "A set of linting rules for all RateHub projects using React",
+  "version": "0.9.1",   
+  "description": "A set of linting rules for RateHub projects using React",
   "main": "index.js",
   "scripts": {
     "test": "test"
@@ -25,13 +24,12 @@
   "author": "Chris Skoblenick",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">= 3"
-  },
-  "dependencies": {
+    "eslint": ">= 3",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0"
   },
+  "dependencies": {
+  },
   "devDependencies": {
-    "eslint": "^4.19.1"
   }
 }
