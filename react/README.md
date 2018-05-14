@@ -5,6 +5,7 @@
 * [[eslint-plugin-react]](https://www.npmjs.com/package/eslint-plugin-react): industry-standard collection of linting rules for React.  We are explicitly choosing the severity of each rule, discussed below.
 * [[eslint-plugin-jsx-a11y]](https://www.npmjs.com/package/eslint-plugin-jsx-a11y): industry-standard accessibility checker when using React.  For this languge, we have chosen the ['strict'](https://github.com/evcohen/eslint-plugin-jsx-a11y#difference-between-recommended-and-strict-mode) rule set because accessibility is a first-class citizen in our designs.  If deviations from the rule set are made, they will be listed and discussed here.
 
+
 # Rule Discussion
 Below is a discussion of the chosen linting rules, their classification and a justification as to why it has been selected.
 
