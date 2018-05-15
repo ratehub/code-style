@@ -1,7 +1,7 @@
 module.exports = {
 
-   "sourceType": "module",
    "parserOptions": {
+      "sourceType": "module",
       "ecmaVersion": 6,
       "ecmaFeatures": {
          "jsx": true,
@@ -15,3 +15,4 @@ module.exports = {
    ].map(require.resolve),
 
  };
+ 
