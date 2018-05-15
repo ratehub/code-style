@@ -34,7 +34,7 @@ These rules look for anti-patterns and common implementation errors.  When detec
 * [[react/jsx-no-comment-textnodes]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-no-comment-textnodes.md): prevent likely unintended behaviour.
 * [[react/jsx-no-duplicate-props]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-no-duplicate-props.md): prevent something which is most-likely an error.
 * [[react/jsx-no-literals]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-no-literals.md): all developments are to be done as i18n, therefore string literals should not be emitted directly.
-* [[react/jsx-no-undef]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-no-undef.md): all variables should be defined within the file they are used.  Circumventing this using global definitions makes files harder to reason about, and introduces maintainability concerns.
+* [[react/jsx-no-undef]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-no-undef.md): all variables should be defined within the file they are used.  Circumventing this using global definitions makes files harder to reason about, and introduces maintainability concerns.  `allowGlobals: true` is being used to allow compatability with jsx-control-statements [see issue](https://github.com/vkbansal/eslint-plugin-jsx-control-statements#important).
 
 ### Warnings:
 * [[react/no-deprecated]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-deprecated.md): generally, behaviours are depreciated for a reason.  In order to keep current with a framework, any code using depreciated functionality should be refactored to no longer require it.
