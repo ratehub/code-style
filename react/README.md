@@ -36,6 +36,13 @@ These rules look for anti-patterns and common implementation errors.  When detec
 * [[react/jsx-no-duplicate-props]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-no-duplicate-props.md): prevent something which is most-likely an error.
 * [[react/jsx-no-literals]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-no-literals.md): all developments are to be done as i18n, therefore string literals should not be emitted directly.
 * [[react/jsx-no-undef]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-no-undef.md): all variables should be defined within the file they are used.  Circumventing this using global definitions makes files harder to reason about, and introduces maintainability concerns.  `allowGlobals: true` is being used to allow compatability with jsx-control-statements [see issue](https://github.com/vkbansal/eslint-plugin-jsx-control-statements#important).
+* [[jsx-control-statements/jsx-choose-not-empty]](https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-choose-not-empty.md): an empty choose statement has no purpose, and was likely not intended by the author.
+* [[jsx-control-statements/jsx-for-require-each]](https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-for-require-each.md): when `each` is missing, the statement has no purpose and was likely an unintended omission.
+* [["jsx-control-statements/jsx-for-require-of"]](https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-for-require-of.md): when `of` is missing, the statement has no purpose and was likely an unintended omission.
+* [[jsx-control-statements/jsx-if-require-condition]](https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-if-require-condition.md): when `condition`is missing the statement has no purpose, and was likely an unintended omission.
+* [[jsx-control-statements/jsx-otherwise-once-last]](https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-otherwise-once-last.md): enforce proper usage of `Otherwise`.  Improper use was likely not intended by the author.
+* [[jsx-when-require-condition]](https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-when-require-condition.md): when `condition` is missing, the statement has no purpose and was likely and unintended omission.
+
 
 ### Warnings:
 * [[react/no-deprecated]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-deprecated.md): generally, behaviours are depreciated for a reason.  In order to keep current with a framework, any code using depreciated functionality should be refactored to no longer require it.
@@ -70,6 +77,8 @@ These rules look for maintainability issues, particularly over-complicated desig
 * [[react/jsx-pascal-case]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-pascal-case.md): force following of idomatic practices within React, improving readability of code bases.
 * [[react/jsx-tag-spacing]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-tag-spacing.md): using a consistent spacing within JSX element tags improves readability.
 * [[react/jsx-wrap-multilines]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-wrap-multilines.md): makes a Component easier to read by defining a consistent layout when reading render function.
+* [[jsx-control-statements/jsx-use-if-tag]](https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-use-if-tag.md): prefer JSX flow-control.  Components should NOT be having complex decision logic; this should be refactored out into a business object or handled within a state store.
+
 
 ### Warnings:
 * [[react/boolean-prop-naming]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/boolean-prop-naming.md): prefer a consistent naming convention making it easier to reason about expected type of props.
@@ -79,13 +88,11 @@ These rules look for maintainability issues, particularly over-complicated desig
 * [[react/no-set-state]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-set-state.md): all state should be managed by a state-management library (i.e. MobX).  When transient information is needed, it should be managed by a view-store.
 * [[react/prefer-stateless-function]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/prefer-stateless-function.md): stateless functional Components are easier to reason about.  All state should be held within a view-store.
 
-
-
-
-
-
 <!--
-##### These need no-unused-var:
+These need no-unused-var:
 https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-uses-react.md
 https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-uses-vars.md
+
+// This is used as a replacement for no unused var.  Handles use within <For> <If> etc
+https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-jcs-no-undef.md
 -->
