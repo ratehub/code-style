@@ -1,9 +1,6 @@
-
-// Defines the number of spaces for indentation.
 const INDENTATION = 3;
 
 
-// We have chosen 3 as the number of spaces for indentation.
 module.exports = {
    
    "plugins": [

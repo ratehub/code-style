@@ -4,6 +4,7 @@
 # Linting Package Choices
 * [[eslint-plugin-react]](https://www.npmjs.com/package/eslint-plugin-react): industry-standard collection of linting rules for React.  We are explicitly choosing the severity of each rule, discussed below.
 * [[eslint-plugin-jsx-a11y]](https://www.npmjs.com/package/eslint-plugin-jsx-a11y): industry-standard accessibility checker when using React.  For this languge, we have chosen the ['strict'](https://github.com/evcohen/eslint-plugin-jsx-a11y#difference-between-recommended-and-strict-mode) rule set because accessibility is a first-class citizen in our designs.  If deviations from the rule set are made, they will be listed and discussed here.
+* [[eslint-jsx-control-statements]](https://www.npmjs.com/package/eslint-plugin-jsx-control-statements): view components should be devoid of complex or business-related logic.  When simple evaluation of logic is used to control output, JSX control statements to make the code easier to read.  In cases where complex logic or flow-control is needed, it should be refactored out into a JavaScript object which can be consulted to perform the evaluation.
 
 
 # Rule Discussion
