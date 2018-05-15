@@ -1,3 +1,9 @@
+
+// Defines the number of spaces for indentation.
+const INDENTATION = 3;
+
+
+// We have chosen 3 as the number of spaces for indentation.
 module.exports = {
    
    "plugins": [
@@ -48,8 +54,8 @@ module.exports = {
      "react/jsx-curly-spacing": "error",
      "react/jsx-equals-spacing": "error",
      "react/jsx-filename-extension": "error",
-     "react/jsx-indent": "error",
-     "react/jsx-indent-props": "error",
+     "react/jsx-indent": ["error", INDENTATION],
+     "react/jsx-indent-props": ["error", INDENTATION],
      "react/jsx-one-expression-per-line": "error",
      "react/jsx-pascal-case": "error",
      "react/jsx-tag-spacing": "error",
