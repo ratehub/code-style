@@ -10,7 +10,8 @@ module.exports = {
    },
    
    "extends": [
-     './rules/import'
+     './rules/import',
+     './rules/base'
    ].map(require.resolve),
 
  };
