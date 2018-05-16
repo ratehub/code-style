@@ -6,14 +6,12 @@ module.exports = {
       "ecmaFeatures": {
          "jsx": true,
          "modules": true,
-         "experimentalObjectRestSpread": true,
+         "experimentalObjectRestSpread": true
       }
    },
    
    "extends": [
-     './rules/react',
-     './rules/react-a11y',
-     './rules/jsx-control-statements'
+     './rules/import'
    ].map(require.resolve),
 
  };

@@ -1,0 +1,29 @@
+{
+  "name": "@ratehub/eslint-config-js",
+  "version": "0.1.0",
+  "description": "ESLint config for use on RateHub JavaScript projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ratehub/code-style/tree/master/javascript"
+  },
+  "bugs": {
+    "url": "https://github.com/ratehub/code-style/issues"
+  },
+  "homepage": "https://github.com/ratehub/code-style",
+  "keywords": [
+    "ratehub",
+    "eslint",
+    "eslintconfig",
+    "javascript"
+  ],
+  "author": "Chris Skoblenick",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">= 3",
+    "eslint-plugin-import": "^6.0.3"
+  }
+}
