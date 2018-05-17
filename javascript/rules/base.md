@@ -10,6 +10,7 @@ We have selected the [recommended](https://eslint.org/docs/rules/) rule set.  De
 | [[getter-return]](https://eslint.org/docs/rules/getter-return) | ERROR | Every `get` can reasonabily be expected to return a value.  No return is likely an unintended omission |
 | [[no-await-in-loop]](https://eslint.org/docs/rules/no-await-in-loop) | WARN | Syncronously looping over a set with an await on each operation likely not the original intention of the author; they likely wanted to `await` completion of a set of operations.  This may be upgraded to an `error` at a later point.
 | [[no-compare-neg-zero]](https://eslint.org/docs/rules/no-compare-neg-zero) | ERROR | this makes code more confusing to read with no benefit |
+| [[no-cond-assign]](https://eslint.org/docs/rules/no-cond-assign) | ERROR | this is likely not indended, and caught as a likely typo |
 
 
 
