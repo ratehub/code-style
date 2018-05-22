@@ -17,4 +17,11 @@ module.exports = {
      './rules/jsx-control-statements'
    ].map(require.resolve),
 
+   "rules": {
+
+     // Use this to fix "base/no-unused-vars when using React"
+     // https://github.com/eslint/eslint/issues/8226
+     "react/jsx-uses-vars": "error"
+   }
+
  };
