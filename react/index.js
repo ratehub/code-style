@@ -9,8 +9,9 @@ module.exports = {
          "experimentalObjectRestSpread": true,
       }
    },
-   
+
    "extends": [
+     '@ratehub/eslint-config-js',
      './rules/react',
      './rules/jsx-a11y',
      './rules/jsx-control-statements'

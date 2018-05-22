@@ -1,18 +1,22 @@
 module.exports = {
 
-   "rules" : {
+   "extends": [
+      "eslint:recommended"
+   ]
 
-      "for-direction" : "off",
-      "getter-return" : "error",
-      "no-await-in-loop" : "warn",
-      "no-compare-neg-zero" : "error",
+   // "rules" : {
+
+   //    "for-direction" : "off",
+   //    "getter-return" : "error",
+   //    "no-await-in-loop" : "warn",
+   //    "no-compare-neg-zero" : "error",
       
 
 
-      "accessor-pairs" : ["error", {"setWithoutGet" : true, "getWithoutSet" : false}], 
+   //    "accessor-pairs" : ["error", {"setWithoutGet" : true, "getWithoutSet" : false}], 
 
 
 
-   }
+   // }
 
 }

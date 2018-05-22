@@ -6,7 +6,7 @@ Plugins and rules have been selected with the assumption that the code will be u
 * catching mistakes
 * preventing bad design (easier to change/maintain)
 * minimizing code complexity (easier to read)
-
+   
 ## Rule Package Choices
 * [[eslint (base)]](https://eslint.org/docs/rules/): base included rule set.
 * [[eslint-plugin-import]](https://www.npmjs.com/package/eslint-plugin-import): provides linting rules for import/export statements.
