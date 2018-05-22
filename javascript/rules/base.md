@@ -3,7 +3,7 @@
 We have selected the [recommended](https://eslint.org/docs/rules/) rule set.  Deviations from the rule set will be discussed below.
 
 ## Rule Deviations
-
+<!-- 
 | Rule Name | Class | Discussion |
 | --- | :---: | --- |
 | [[for-direction]](https://eslint.org/docs/rules/for-direction) | OFF | While it is suggested that any non-forward iteration require a comment pointing out the deviation to the developer, there are many cases where backward iteration is desired and a clearer way of implementation a solution |
@@ -14,4 +14,4 @@ We have selected the [recommended](https://eslint.org/docs/rules/) rule set.  De
 
 
 
-| [[accessor-pairs]](https://eslint.org/docs/rules/accessor-pairs) | ERROR | Providing a `set` without a `get` is very unintuative.  In any case where this type of behaviour is desired, use a `function` instead. |
+| [[accessor-pairs]](https://eslint.org/docs/rules/accessor-pairs) | ERROR | Providing a `set` without a `get` is very unintuative.  In any case where this type of behaviour is desired, use a `function` instead. | -->
