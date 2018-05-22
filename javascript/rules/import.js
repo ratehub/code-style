@@ -40,7 +40,7 @@ module.exports = {
       "import/first": "error",
       "import/exports-last": "error",
       "import/order": "error",
-      "import/newline-after-import": ["error", 2],
+      "import/newline-after-import": ["error", {"count": 2}],
       "import/no-unassigned-import": "error",
       "import/no-named-default": "error",
       "import/group-exports": "error",
