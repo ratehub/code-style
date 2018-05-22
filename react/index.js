@@ -19,8 +19,11 @@ module.exports = {
 
    "rules": {
 
-     // Use this to fix "base/no-unused-vars when using React"
-     // https://github.com/eslint/eslint/issues/8226
+     // These two rules are required to use "base/no-unused-vars"
+     // when using React.  See rule pages for details:
+     // https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-uses-react.md
+     // https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-uses-vars.md
+     "react/jsx-uses-react": "error",
      "react/jsx-uses-vars": "error"
    }
 
