@@ -24,7 +24,6 @@ module.exports = {
       "import/no-namespace": "error",
 
       // Code Smells - Warnings
-      "import/no-internal-modules": "warn",
 
       // Code Smells - Parking Lot
       "import/no-restricted-paths": "off",
@@ -43,14 +42,19 @@ module.exports = {
       "import/newline-after-import": ["error", {"count": 2}],
       "import/no-unassigned-import": "error",
       "import/no-named-default": "error",
-      "import/group-exports": "error",
       
       // Readability - Warnings
       "import/prefer-default-export": "warn",
+      "import/group-exports": "warn",
       
       // Readability - Parking Lot
       "import/no-duplicates": "off",
       "import/no-anonymous-default-export": "off",
-      "import/extensions": "off"
+      "import/extensions": "off",
+
+
+      // Disabled
+      "import/no-internal-modules": "off"
+
    }
 }

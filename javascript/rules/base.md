@@ -3,6 +3,9 @@
 We have selected the [recommended](https://eslint.org/docs/rules/) rule set.  Deviations from the rule set will be discussed below.
 
 ## Rule Deviations
+* [[indent]](https://eslint.org/docs/rules/indent): an internal vote was held, and the winner was `4 spaces` (5 votes).  2nd place was 3 spaces (4 votes).  Tabs & 2 spaces each received 2 votes.
+
+
 <!-- 
 | Rule Name | Class | Discussion |
 | --- | :---: | --- |

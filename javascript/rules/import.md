@@ -17,10 +17,7 @@ These rules look for anti-patterns and common implementation errors.  When detec
 * [[import/no-mutable-exports]](https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/no-mutable-exports.md): exports are likely not intended to be declared as `var`.  In cases where it is intententional, a simpler, easier to understand design is likely possible.
 * [[import/no-namespace]](https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/no-namespace.md): if a namespace is imported, it should be used.  Failures of this rule likely indicated an imcomplete refactor, or a possible typo.
 
-
-
 ### Warnings:
-* [[import/no-internal-modules]](https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/no-internal-modules.md): ideally sub-modules should provide indexes, which should be the point where includes are made against.
 
 ### Parking Lot/Future: 
 * [[import/no-restricted-paths]](https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/no-restricted-paths.md): if a consistent folder layout is developed, this is an interesting way to enforce separation between server/client files.
@@ -43,7 +40,10 @@ These rules look for maintainability issues, particularly over-complicated desig
 * [[import/newline-after-import]](https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/newline-after-import.md): having a forced break between imports and the body of the code makes it easier to reason about the structure of the code, as dependency aliasing is understood differently than functionality declaration.  This is classified as an error because it can be auto-fixed.
 * [[import-no-unassigned-import]](https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/no-unassigned-import.md): performing imports without assignment to value can lead to confusing behaviour and does not follow idomatic practices.
 * [[import/no-named-default]](https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/no-named-default.md): this clashes against idomatic practices and does not aid readability in any way.
-* [[import/group-exports]](https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/group-exports.md): forcing use of a single export statement makes it easier to reason about exactly what is being exported, instead of having to scan the entire file to locate each export.
 
 ### Warnings:
 * [[import/prefer-default-export]](https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/prefer-default-export.md): it is generally convention that modules provide default exports.  Where possible, they should be provided.
+* [[import/group-exports]](https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/group-exports.md): forcing use of a single export statement makes it easier to reason about exactly what is being exported.  This is classified as a warning, because we already stipulate all exports are done at the bottom of the file; this only adds a small amount of additional clarity.
+
+## Disabled
+* [[import/no-internal-modules]](https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/no-internal-modules.md): ideally sub-modules should provide indexes, which should be the point where includes are made against.  In practice, this introduces a fair bit of extra work with little extra benefit.
