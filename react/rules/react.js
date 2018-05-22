@@ -1,4 +1,8 @@
-const INDENTATION = 3;
+// An internal poll was used, and 4 spaces won (5 votes)
+// 2nd place was 3 spaces (4 votes)
+// 2 spaces => 2 votes
+// tab => 2 votes
+const INDENTATION = 4;
 
 
 module.exports = {
