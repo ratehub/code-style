@@ -1,5 +1,8 @@
 module.exports = {
 
+   // Using the default parser will cause issues with arrow-declared functions.
+   "parser": "babel-eslint",
+
    "parserOptions": {
       "sourceType": "module",
       "ecmaVersion": 2017,

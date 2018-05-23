@@ -23,6 +23,7 @@
   "author": "Chris Skoblenick",
   "license": "MIT",
   "peerDependencies": {
+    "babel-eslint": "^8.0.2",
     "eslint": ">= 3",
     "eslint-plugin-import": "^2.12.0"
   }
