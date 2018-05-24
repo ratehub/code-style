@@ -28,6 +28,11 @@ module.exports = {
       "jsx-control-statements/jsx-otherwise-once-last": "error",
       "jsx-control-statements/jsx-use-if-tag": "error",
       "jsx-control-statements/jsx-when-require-condition": "error",
+
+      // This is a REPLACEMENT of the eslint no-undef rule which is compatable with <For> and <With>
+      // See https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-jcs-no-undef.md
+      "jsx-control-statements/jsx-jcs-no-undef": "error",
+      "no-undef": "off"
     }
 
 }

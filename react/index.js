@@ -13,6 +13,17 @@ module.exports = {
       }
    },
 
+   "settings": {
+     // We need to ask eslint-plugin-import to also search for jsx files when testing validity of `import`.
+     // This plugin is used in @ratehub/eslint-config-js.
+     "import/resolver": {
+       "node": {
+         "extensions": [".js", ".jsx"]
+      }
+    },
+    "import/extensions": [".js", ".jsx"]
+   },
+
    "extends": [
      '@ratehub/eslint-config-js',
      './rules/react',
@@ -21,7 +32,6 @@ module.exports = {
    ].map(require.resolve),
 
    "rules": {
-
      // These two rules are required to use "base/no-unused-vars"
      // when using React.  See rule pages for details:
      // https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-uses-react.md

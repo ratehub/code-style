@@ -9,6 +9,7 @@ These rules look for anti-patterns and common implementation errors.  When detec
 * [[jsx-control-statements/jsx-if-require-condition]](https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-if-require-condition.md): when `condition`is missing the statement has no purpose, and was likely an unintended omission.
 * [[jsx-control-statements/jsx-otherwise-once-last]](https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-otherwise-once-last.md): enforce proper usage of `Otherwise`.  Improper use was likely not intended by the author.
 * [[jsx-control-statements/jsx-when-require-condition]](https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-when-require-condition.md): when `condition` is missing, the statement has no purpose and was likely and unintended omission.
+* [[jsx-control-statements/jsx-jcs-no-undef]](https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-jcs-no-undef.md): drop-in replacement for the [eslint rule](http://eslint.org/docs/rules/no-undef) of similar name.  This version is compatable with <For> and <With> statements.
 
 
 ## Cognitive Load & Maintainability Concerns
@@ -16,8 +17,3 @@ These rules look for maintainability issues, particularly over-complicated desig
 
 ### Errors:
 * [[jsx-control-statements/jsx-use-if-tag]](https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-use-if-tag.md): prefer JSX flow-control.  Components should NOT be having complex decision logic; this should be refactored out into a business object or handled within a state store.
-
-<!--
-// This is used as a replacement for no unused var.  Handles use within <For> <If> etc
-https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-jcs-no-undef.md
--->

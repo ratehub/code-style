@@ -69,9 +69,3 @@ These rules look for maintainability issues, particularly over-complicated desig
 ### Parking Lot/Future Roadmap:
 * [[react/no-set-state]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-set-state.md): all state should be managed by a state-management library (i.e. MobX).  When transient information is needed, it should be managed by a view-store.
 * [[react/prefer-stateless-function]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/prefer-stateless-function.md): stateless functional Components are easier to reason about.  All state should be held within a view-store.
-
-<!--
-These need no-unused-var:
-https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-uses-react.md
-https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-uses-vars.md
--->
