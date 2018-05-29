@@ -4,6 +4,13 @@ module.exports = {
       "import"
    ],
 
+   "settings": {
+     // Failure to add this makes this check take an eternity
+     "import/ignore": [
+       "node_modules"
+      ]
+   },
+ 
    "rules": {
 
       // Code Smells - Errors

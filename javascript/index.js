@@ -11,7 +11,7 @@ module.exports = {
          "experimentalObjectRestSpread": true
       }
    },
-   
+
    "extends": [
      './rules/import',
      './rules/base'
