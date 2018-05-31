@@ -4,7 +4,7 @@ We have selected the [recommended](https://eslint.org/docs/rules/) rule set.  De
 
 ## Rule Deviations
 * [[indent]](https://eslint.org/docs/rules/indent): an internal vote was held, and the winner was `4 spaces` (5 votes).  2nd place was 3 spaces (4 votes).  Tabs & 2 spaces each received 2 votes.
-
+* [[no-console]](https://eslint.org/docs/rules/no-console): this has been downgraded to `warn`, as `console` statements are used frequently during development and validation, with full intention to be removed prior to production deployment.  An often-used work-around is to just add ESLint ignore to the console statements, but that makes it much more difficult to later identify the console statements for later removal.  By keeping them as warnings, it will not fail testing, but can be easily recognized as needing to be fixed prior to final deployment.
 
 <!-- 
 | Rule Name | Class | Discussion |

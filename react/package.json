@@ -24,7 +24,7 @@
   "author": "Chris Skoblenick",
   "license": "MIT",
   "peerDependencies": {
-    "@ratehub/eslint-config-js": "^0.1.7",
+    "@ratehub/eslint-config-js": "^1.0.0",
     "babel-eslint": "^8.0.2",
     "eslint": ">= 3",
     "eslint-plugin-jsx-a11y": "^6.0.3",

@@ -5,9 +5,9 @@ module.exports = {
       "eslint:recommended"
    ],
 
-   "rules" : {
-        
-        "indent" : ["error", 4]
+   "rules" : {        
+        "indent": ["error", 4],
+        "no-console": ["warn"]
 
 
     //   "for-direction" : "off",
