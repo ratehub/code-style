@@ -15,5 +15,5 @@ You can use the example phpcs.xml here to configure it
 ## PHPStorm formatting
 - Navigate to Settings -> Editor -> Code Style -> PHP and choose "set from" at the top right. Choose PSR2.
 
-## Sublime
-- TODO: Someone using sublime please help write a guide.
+## Sublime Text
+- Install the [editorConfig](https://github.com/sindresorhus/editorconfig-sublime) package via Package Control and restart Sublime. Sublime should begin to respect the .editorconfig file stored in your project with no package configuration required.
