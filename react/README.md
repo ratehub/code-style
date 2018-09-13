@@ -6,6 +6,7 @@ Plugins and rules have been selected with the assumption that the code will be u
 * catching mistakes
 * preventing bad design (easier to change/maintain)
 * minimizing code complexity (easier to read)
+* be as compliant as practical with [WAI-ARIA](https://www.w3.org/TR/wai-aria-practices/) best-practices
 
 ## Linting Package Choices
 * [[eslint-plugin-react]](https://www.npmjs.com/package/eslint-plugin-react): industry-standard collection of linting rules for React.  We are explicitly choosing the severity of each rule, discussed below.
