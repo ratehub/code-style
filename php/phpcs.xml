@@ -39,6 +39,11 @@
     <ini name="memory_limit" value="128M"/>
 
     <!-- Include all sniffs in the PSR2 standard. -->
-    <rule ref="PSR2"/>
+    <rule ref="PSR2">
+        <exclude name="Generic.Files.LineLength.TooLong"/>
+        <exclude name="PEAR.Functions.ValidDefaultValue.NotAtEnd"/>
+        <exclude name="Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace"/>
+        <exclude name="Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore"/>
+    </rule>
 
 </ruleset>
