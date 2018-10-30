@@ -43,7 +43,7 @@ These rules look for maintainability issues, particularly over-complicated desig
 
 ### Warnings:
 * [[import/prefer-default-export]](https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/prefer-default-export.md): it is generally convention that modules provide default exports.  Where possible, they should be provided.
-* [[import/group-exports]](https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/group-exports.md): forcing use of a single export statement makes it easier to reason about exactly what is being exported.  This is classified as a warning, because we already stipulate all exports are done at the bottom of the file; this only adds a small amount of additional clarity.
 
 ## Disabled
 * [[import/no-internal-modules]](https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/no-internal-modules.md): ideally sub-modules should provide indexes, which should be the point where includes are made against.  In practice, this introduces a fair bit of extra work with little extra benefit.
+* [[import/group-exports]](https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/group-exports.md): this used to be set to *warning*, however forcing a single export statement often leads to longer code files, and forces developers to look elsewhere (away from the definition) to see if a symbol is exported. This is especially true for index files.
