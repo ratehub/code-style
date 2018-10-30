@@ -12,7 +12,6 @@ module.exports = {
    },
  
    "rules": {
-
       // Code Smells - Errors
       "import/no-unresolved": "error",
       "import/named": "error",
@@ -52,7 +51,6 @@ module.exports = {
       
       // Readability - Warnings
       "import/prefer-default-export": "warn",
-      "import/group-exports": "warn",
       
       // Readability - Parking Lot
       "import/no-duplicates": "off",
@@ -61,7 +59,7 @@ module.exports = {
 
 
       // Disabled
-      "import/no-internal-modules": "off"
-
+      "import/no-internal-modules": "off",
+      "import/group-exports": "off"
    }
 }

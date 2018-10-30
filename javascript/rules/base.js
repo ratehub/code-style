@@ -1,21 +1,20 @@
 
 module.exports = {
 
-   "extends": [
-      "eslint:recommended"
-   ],
+    "extends": [
+        "eslint:recommended"
+    ],
 
-   "rules" : {        
-        "indent": ["error", 4],
+    "rules": {
+        "indent": ["error", 4, { "SwitchCase": 1 }],
         "no-console": ["warn"]
 
+        //   "for-direction" : "off",
+        //   "getter-return" : "error",
+        //   "no-await-in-loop" : "warn",
+        //   "no-compare-neg-zero" : "error",
 
-    //   "for-direction" : "off",
-    //   "getter-return" : "error",
-    //   "no-await-in-loop" : "warn",
-    //   "no-compare-neg-zero" : "error",
-      
-    //   "accessor-pairs" : ["error", {"setWithoutGet" : true, "getWithoutSet" : false}], 
-   }
+        //   "accessor-pairs" : ["error", {"setWithoutGet" : true, "getWithoutSet" : false}], 
+    }
 
 }
