@@ -1,0 +1,35 @@
+{
+  "name": "@ratehub/stylelint-config",
+  "version": "1.0.0",
+  "description": "A set of linting rules for RateHub projects using CSS and Styled Components",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ratehub/code-style/tree/master/css"
+  },
+  "bugs": {
+    "url": "https://github.com/ratehub/code-style/issues"
+  },
+  "homepage": "https://github.com/ratehub/code-style",
+  "keywords": [
+    "ratehub",
+    "stylelint",
+    "css",
+    "scss",
+    "styled-components"
+  ],
+  "author": "Melissa Mangos",
+  "license": "MIT",
+  "peerDependencies": {
+    "stylelint": "^9.10.1",
+    "stylelint-config-rational-order": "^0.0.4",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.5.2"
+  },
+  "dependencies": {},
+  "devDependencies": {
+  }
+}
