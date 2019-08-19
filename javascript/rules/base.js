@@ -7,7 +7,10 @@ module.exports = {
 
     "rules": {
         "indent": ["error", 4, { "SwitchCase": 1 }],
-        "no-console": ["warn"]
+        "no-console": ["warn"],
+        "keyword-spacing": ["error", { "before": true, "after": true }],
+        "array-bracket-spacing": ["error", "always"],
+        "object-curly-spacing": ["error", "always"],
 
         //   "for-direction" : "off",
         //   "getter-return" : "error",
