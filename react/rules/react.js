@@ -58,7 +58,7 @@ module.exports = {
      "react/jsx-indent": ["error", INDENTATION],
      "react/jsx-indent-props": ["error", INDENTATION],
      "react/jsx-one-expression-per-line": "error",
-     "react/jsx-pascal-case": "error",
+     "react/jsx-pascal-case": ["error", { allowAllCaps: true }],
      "react/jsx-tag-spacing": "error",
      "react/jsx-wrap-multilines": "error",
 
