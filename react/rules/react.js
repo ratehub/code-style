@@ -64,7 +64,7 @@ module.exports = {
 
      // Readability - Warnings
      "react/boolean-prop-naming": "warn",
-     "react/jsx-handler-names": "warn"
+     "react/jsx-handler-names": "off"
   }
 
 };
