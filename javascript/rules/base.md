@@ -8,6 +8,9 @@ We have selected the [recommended](https://eslint.org/docs/rules/) rule set.  De
 * [[keyword-spacing]](https://eslint.org/docs/rules/keyword-spacing): ERROR | All Javascript keywords must be preceded and followed by exactly one space character. This rule was enabled mainly to prevent developers from excluding the space between the keyword and the parenthesized condition in an `if` statement. However, it provides consistent spacing around all keywords. Keywords not surrounded by spaces can easily be misinterpreted (`if(condition)` looks somewhat like a function call to some).
 * [[array-bracket-spacing]](https://eslint.org/docs/rules/array-bracket-spacing) | ERROR | Provides consistent spacing around array members in array literals and destructured arrays. This received 100% concensus from the front-end team at the time of addition and is the array equivalent of our rule for `object-curly-spacing`.
 * [[object-curly-spacing]](https://eslint.org/docs/rules/object-curly-spacing) | ERROR | Provides consistent spacing around object properties in object literals and destructured objects. This received 100% concensus from the front-end team at the time of addition and especially helps us in JSX as we commonly destructure component props.
+* [[quotes]](https://eslint.org/docs/rules/quotes) | ERROR | Prefer to use single quotes in strings except where interpolating with backticks.
+* [[jsx-quotes]](https://eslint.org/docs/rules/jsx-quotes) | ERROR | Always use double-quotes in attributes.
+
 
 <!-- 
 | Rule Name | Class | Discussion |
