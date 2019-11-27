@@ -12,6 +12,9 @@ module.exports = {
         "array-bracket-spacing": ["error", "always"],
         "object-curly-spacing": ["error", "always"],
 
+        "quotes": ["error", "single"],
+        "jsx-quotes": ["error", "prefer-double"],
+
         //   "for-direction" : "off",
         //   "getter-return" : "error",
         //   "no-await-in-loop" : "warn",
