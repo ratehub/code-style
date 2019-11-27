@@ -64,8 +64,10 @@ These rules look for maintainability issues, particularly over-complicated desig
 
 ### Warnings:
 * [[react/boolean-prop-naming]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/boolean-prop-naming.md): prefer a consistent naming convention making it easier to reason about expected type of props.
-* [[react/jsx-handler-names]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-handler-names.md): prefer a consistent naming convention to make it easier to reason about the expected type of props.
 
 ### Parking Lot/Future Roadmap:
 * [[react/no-set-state]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-set-state.md): all state should be managed by a state-management library (i.e. MobX).  When transient information is needed, it should be managed by a view-store.
 * [[react/prefer-stateless-function]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/prefer-stateless-function.md): stateless functional Components are easier to reason about.  All state should be held within a view-store.
+
+### Disabled:
+* [[react/jsx-handler-names]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-handler-names.md): this rule was largely ignored and bloating the travis logs, so we agreed to remove it in a level 10 on Nov 12, 2019
