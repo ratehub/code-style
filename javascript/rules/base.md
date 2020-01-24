@@ -10,6 +10,7 @@ We have selected the [recommended](https://eslint.org/docs/rules/) rule set.  De
 * [[object-curly-spacing]](https://eslint.org/docs/rules/object-curly-spacing) | ERROR | Provides consistent spacing around object properties in object literals and destructured objects. This received 100% concensus from the front-end team at the time of addition and especially helps us in JSX as we commonly destructure component props.
 * [[quotes]](https://eslint.org/docs/rules/quotes) | ERROR | Prefer to use single quotes in strings except where interpolating with backticks.
 * [[jsx-quotes]](https://eslint.org/docs/rules/jsx-quotes) | ERROR | Always use double-quotes in attributes.
+* [[comma-dangle]](https://eslint.org/docs/rules/jsx-quotes) | WARN | Prefer trailing commas when array / object elements are on multiple lines to improve clarity of diffs, prefer no trailing commas when everything is on one line.
 
 
 <!-- 
