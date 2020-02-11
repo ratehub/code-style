@@ -11,6 +11,7 @@ module.exports = {
         "keyword-spacing": ["error", { "before": true, "after": true }],
         "array-bracket-spacing": ["error", "always"],
         "object-curly-spacing": ["error", "always"],
+        "comma-dangle": ["warn", "always-multiline"],
 
         // [Nov 27, 2019] @chris.skoblenick: commented out the quotes enforecement for now; 
         // REASON: will cause massive monorepo changes; need to incorporate once most PRs merged.
