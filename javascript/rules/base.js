@@ -16,7 +16,7 @@ module.exports = {
             "code": 110,
             "ignoreUrls": true,
             "ignoreStrings": true,
-            "ignoreTemplateLiterals": true
+            "ignoreTemplateLiterals": true,
         }],
 
         // [Nov 27, 2019] @chris.skoblenick: commented out the quotes enforecement for now;
