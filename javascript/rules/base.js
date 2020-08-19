@@ -19,10 +19,8 @@ module.exports = {
             "ignoreTemplateLiterals": true,
         }],
 
-        // [Nov 27, 2019] @chris.skoblenick: commented out the quotes enforecement for now;
-        // REASON: will cause massive monorepo changes; need to incorporate once most PRs merged.
-        // "quotes": ["error", "single"],
-        // "jsx-quotes": ["error", "prefer-double"],
+        "quotes": ["error", "single"],
+        "jsx-quotes": ["error", "prefer-double"],
 
         // "for-direction" : "off",
         // "getter-return" : "error",

@@ -1,6 +1,6 @@
 {
   "name": "@ratehub/eslint-config-react",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "description": "A set of linting rules for RateHub projects using React",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "author": "Chris Skoblenick",
   "license": "MIT",
   "peerDependencies": {
-    "@ratehub/eslint-config-js": "~1.2.0",
+    "@ratehub/eslint-config-js": "^2.0.0",
     "babel-eslint": "^8.0.2",
     "eslint": ">= 3",
     "eslint-plugin-jsx-a11y": "^6.1.2",
