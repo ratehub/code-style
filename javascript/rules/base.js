@@ -12,7 +12,7 @@ module.exports = {
         "array-bracket-spacing": ["error", "always"],
         "object-curly-spacing": ["error", "always"],
         "comma-dangle": ["warn", "always-multiline"],
-        "max-len": ["error", {
+        "max-len": ["warn", {
             "code": 110,
             "ignoreUrls": true,
             "ignoreStrings": true,
