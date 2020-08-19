@@ -11,6 +11,7 @@ We have selected the [recommended](https://eslint.org/docs/rules/) rule set.  De
 * [[quotes]](https://eslint.org/docs/rules/quotes) | ERROR | Prefer to use single quotes in strings except where interpolating with backticks.
 * [[jsx-quotes]](https://eslint.org/docs/rules/jsx-quotes) | ERROR | Always use double-quotes in attributes.
 * [[comma-dangle]](https://eslint.org/docs/rules/jsx-quotes) | WARN | Prefer trailing commas when array / object elements are on multiple lines to improve clarity of diffs, prefer no trailing commas when everything is on one line.
+* [[max-len]](https://eslint.org/docs/rules/max-len) | ERROR | Line lengths may not exceed 110 characters, with exceptions provided for URLs, strings, and template literals.
 
 
 <!-- 
