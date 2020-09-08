@@ -13,7 +13,7 @@ module.exports = {
         "object-curly-spacing": ["error", "always"],
         "comma-dangle": ["warn", "always-multiline"],
         "max-len": ["warn", {
-            "code": 110,
+            "code": 120,
             "ignoreUrls": true,
             "ignoreStrings": true,
             "ignoreTemplateLiterals": true,
