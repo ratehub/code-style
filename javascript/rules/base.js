@@ -1,6 +1,4 @@
-
 module.exports = {
-
     "extends": [
         "eslint:recommended"
     ],
@@ -12,12 +10,6 @@ module.exports = {
         "array-bracket-spacing": ["error", "always"],
         "object-curly-spacing": ["error", "always"],
         "comma-dangle": ["warn", "always-multiline"],
-        "max-len": ["warn", {
-            "code": 120,
-            "ignoreUrls": true,
-            "ignoreStrings": true,
-            "ignoreTemplateLiterals": true,
-        }],
 
         "quotes": ["error", "single"],
         "jsx-quotes": ["error", "prefer-double"],
@@ -29,5 +21,4 @@ module.exports = {
 
         // "accessor-pairs" : ["error", {"setWithoutGet" : true, "getWithoutSet" : false}],
     }
-
 }
