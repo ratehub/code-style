@@ -26,7 +26,7 @@ These rules could cause errors while parsing our CSS. Any rule that was selected
 * [[string-no-newline]](https://stylelint.io/user-guide/rules/string-no-newline/)
 * [[unit-no-unknown]](https://stylelint.io/user-guide/rules/unit-no-unknown/)
 * [[property-no-unknown]](https://stylelint.io/user-guide/rules/property-no-unknown/)
-* [[ignore-consecutive-duplicates]](https://stylelint.io/user-guide/rules/ignore-consecutive-duplicates/): Cases where duplicates are needed for overrides (eg. `display: -ms-grid; display: grid`) will be ignored
+* [[declaration-block-no-duplicate-properties]](https://stylelint.io/user-guide/rules/declaration-block-no-duplicate-properties): Cases where duplicates are needed for overrides (eg. `display: -ms-grid; display: grid`) will be ignored
 * [[declaration-block-no-shorthand-property-overrides]](https://stylelint.io/user-guide/rules/declaration-block-no-shorthand-property-overrides/): This rule was selected for better readability of our CSS
 * [[block-no-empty]](https://stylelint.io/user-guide/rules/block-no-empty/)
 * [[selector-pseudo-class-no-unknown]](https://stylelint.io/user-guide/rules/selector-pseudo-class-no-unknown/)
