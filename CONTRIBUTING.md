@@ -65,7 +65,7 @@ Before you submit your Pull Request (PR) consider the following guidelines:
      ```shell
      git commit --all
      ```
-   Note: the optional commit `-a` command line option will automatically "add" and "rm" edited files.
+   Note: the optional commit `--all` / `-a` command line option will automatically "add" and "rm" edited files.
 
 7. Push your branch to GitHub:
 
