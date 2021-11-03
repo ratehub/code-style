@@ -153,6 +153,7 @@ To ensure consistency throughout the source code, keep these rules in mind as yo
 
 * All features or bug fixes **must be tested**.
 * All lists must be alphabetically ordered.
+* Write & format your code as though only one developer wrote the entire codebase.
 
 ## <a name="commit"></a> Commit Message Format
 
