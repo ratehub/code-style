@@ -10,3 +10,7 @@
 
 ## Layout
 Each folder contains a listing of the rules chosen, and some background about why it is seen as undesirable
+
+### Contributing Guidelines
+
+Read through our [contributing guidelines][contributing] to learn about our submission process, coding rules and more.
