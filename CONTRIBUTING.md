@@ -190,7 +190,7 @@ Any line of the commit message cannot be longer than 100 characters.
   │       │             │
   │       │             └─⫸ Summary in present tense. Not capitalized. No period at the end.
   │       │
-  │       └─⫸ Commit Scope: do-dev-1|faas|gke-staging-01
+  │       └─⫸ Commit Scope: <defined-by-repo>
   │
   └─⫸ Commit Type: build|ci|deploy|docs|feat|fix|perf|refactor|test
 ```
@@ -213,14 +213,8 @@ Must be one of the following:
 
 
 ##### Scope
-The scope should be the name of one of the root folders.
-
-Note: DO NOT USE JIRA tickets as scopes! Either use the footer or place them
-at the end of the subject
-
-The following is the list of supported scopes:
-
-Please see each individual repository for a list of acceptable scopes!
+The scope is defined by the repo you're committing to. Please see their
+scope section to understand what they expect in the scope field.
 
 ##### Summary
 
@@ -267,8 +261,6 @@ The content of the commit message body should contain:
 
 - information about the SHA of the commit being reverted in the following format: `This reverts commit <SHA>`,
 - a clear description of the reason for reverting the commit message.
-
-
 
 
 [commit-message-format]: https://github.com/ratehub/code-style/blob/master/ratehub/CONTRIBUTING.md#commit
