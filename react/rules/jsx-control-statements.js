@@ -32,7 +32,10 @@ module.exports = {
       // This is a REPLACEMENT of the eslint no-undef rule which is compatable with <For> and <With>
       // See https://github.com/vkbansal/eslint-plugin-jsx-control-statements/blob/master/docs/rules/jsx-jcs-no-undef.md
       "jsx-control-statements/jsx-jcs-no-undef": "error",
-      "no-undef": "off"
+      "no-undef": "off",
+
+      // Required for 7.0.0+ to avoid errors for If/Choose/etc.
+      "react/jsx-no-undef": ["error", { "allowGlobals": true }]
     }
 
 }
