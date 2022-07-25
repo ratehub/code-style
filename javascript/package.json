@@ -1,6 +1,6 @@
 {
   "name": "@ratehub/eslint-config-js",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "ESLint config for use on RateHub JavaScript projects",
   "main": "index.js",
   "scripts": {
@@ -23,8 +23,8 @@
   "author": "Chris Skoblenick",
   "license": "MIT",
   "peerDependencies": {
-    "babel-eslint": "^8.0.2",
-    "eslint": ">= 3",
-    "eslint-plugin-import": "^2.12.0"
+    "@babel/eslint-parser": "^7.18.9",
+    "eslint": ">= 8",
+    "eslint-plugin-import": "^2.26.0"
   }
 }
