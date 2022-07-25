@@ -4,11 +4,11 @@
   "description": "ESLint config for use on RateHub JavaScript projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ratehub/code-style/tree/master/javascript"
+    "url": "https://github.com/ratehub/code-style"
   },
   "bugs": {
     "url": "https://github.com/ratehub/code-style/issues"
@@ -26,5 +26,40 @@
     "@babel/eslint-parser": "^7.18.9",
     "eslint": ">= 8",
     "eslint-plugin-import": "^2.26.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^19.0.3",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.5",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3"
+  },
+  "dependencies": {},
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "package-lock.json"
+          ],
+          "message": "chore(release): ${nextRelease.gitTag}\n\n${nextRelease.notes}\n\n[skip release]"
+        }
+      ],
+      [
+        "@semantic-release/github",
+        {
+          "failComment": false
+        }
+      ]
+    ]
   }
 }

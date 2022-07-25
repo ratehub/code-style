@@ -1,0 +1,9 @@
+{
+    "name": "@ratehub/code-styles",
+    "private": true,
+    "workspaces": [
+        "css",
+        "react",
+        "javascript"
+    ]
+}
