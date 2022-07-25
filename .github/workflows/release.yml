@@ -5,9 +5,9 @@ on:
       - master
     # Only attempt publish when the package.json has changed
     paths:
-      - 'javascript/package.json'
-      - 'css/package.json'
-      - 'react/package.json'
+      - 'javascript/**'
+      - 'css/**'
+      - 'react/**'
 jobs:
   publish:
     runs-on: ubuntu-latest
