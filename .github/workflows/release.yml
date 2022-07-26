@@ -1,0 +1,48 @@
+name: Auto Release to PackageCloud
+on:
+  push:
+    branches:
+      - master
+    # Only attempt publish when the package.json has changed
+    paths:
+      - 'javascript/**'
+      - 'css/**'
+      - 'react/**'
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    if: |
+      !contains(github.event.head_commit.message, '[skip ci]') &&
+      !contains(github.event.head_commit.message, '[skip release]')
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          # Required for commit analyzer to access git history
+          fetch-depth: 0
+          # needs to be false, otherwise the generated GITHUB_TOKEN will interfere
+          # with the global when used to write to the master (protected) branch
+          # https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md#pushing-packagejson-changes-to-a-master-branch
+          persist-credentials: false
+
+      # Setup .npmrc file to publish package
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+          registry-url: 'https://packagecloud.io/ratehub/npm/npm/'
+          scope: '@ratehub'
+
+      - name: Install Dependencies
+        run: npm ci --workspaces
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PACKAGECLOUD_TOKEN }}
+
+      - name: Generate Release (& Publish)
+        run: npm run release --workspaces
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_RATEHUB_MACHINE_TOKEN }}
+          # NODE_AUTH_TOKEN must be set in step context (and not at job/workflow 
+          # context) or it will be override by the default, causing 401s.
+          NODE_AUTH_TOKEN: ${{ secrets.PACKAGECLOUD_TOKEN }}
+          # Tell `npm publish` to use config created in previous setup.
+          NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.npmrc

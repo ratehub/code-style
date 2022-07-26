@@ -4,11 +4,12 @@
   "description": "A set of linting rules for RateHub projects using React",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "release": "semantic-release --tag-format='${process.env.npm_package_name}-${version}'",
+    "release:dry": "semantic-release --dry-run --branches `git branch --show-current` --tag-format='${process.env.npm_package_name}-${version}'"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ratehub/code-style/tree/master/react"
+    "url": "https://github.com/ratehub/code-style"
   },
   "bugs": {
     "url": "https://github.com/ratehub/code-style/issues"
@@ -24,13 +25,19 @@
   "author": "Chris Skoblenick",
   "license": "MIT",
   "peerDependencies": {
-    "@ratehub/eslint-config-js": "^3.0.0",
     "@babel/eslint-parser": "^7.18.9",
+    "@ratehub/eslint-config-js": "^3.0.0",
     "eslint": ">= 8",
     "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-react": "^7.30.1",
-    "eslint-plugin-jsx-control-statements": "^3.0.0"
+    "eslint-plugin-jsx-control-statements": "^3.0.0",
+    "eslint-plugin-react": "^7.30.1"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "semantic-release": "^19.0.3",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.5",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3"
+  }
 }
