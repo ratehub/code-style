@@ -4,8 +4,8 @@
   "description": "A set of linting rules for RateHub projects using CSS and Styled Components",
   "main": "index.js",
   "scripts": {
-    "release": "semantic-release",
-    "release:dry": "semantic-release --dry-run --branches `git branch --show-current`"
+    "release": "semantic-release --tag-format='${process.env.npm_package_name}-${version}'",
+    "release:dry": "semantic-release --dry-run --branches `git branch --show-current` --tag-format='${process.env.npm_package_name}-${version}'"
   },
   "repository": {
     "type": "git",
