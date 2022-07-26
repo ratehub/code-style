@@ -1,9 +1,14 @@
 {
     "name": "@ratehub/code-styles",
+    "version": "1.0.0",
     "private": true,
     "workspaces": [
         "css",
         "react",
         "javascript"
-    ]
+    ],
+    "scripts": {
+        "release": "semantic-release",
+        "release:dry": "semantic-release --dry-run --branches `git branch --show-current`"
+    }
 }

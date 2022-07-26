@@ -4,7 +4,8 @@
   "description": "A set of linting rules for RateHub projects using React",
   "main": "index.js",
   "scripts": {
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "release:dry": "semantic-release --dry-run --branches `git branch --show-current`"
   },
   "repository": {
     "type": "git",
@@ -38,32 +39,5 @@
     "@semantic-release/github": "^8.0.5",
     "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3"
-  },
-  "dependencies": {},
-  "release": {
-    "branches": [
-      "master"
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
-      [
-        "@semantic-release/git",
-        {
-          "assets": [
-            "package.json",
-            "package-lock.json"
-          ],
-          "message": "chore(release): ${nextRelease.gitTag}\n\n${nextRelease.notes}\n\n[skip release]"
-        }
-      ],
-      [
-        "@semantic-release/github",
-        {
-          "failComment": false
-        }
-      ]
-    ]
   }
 }
