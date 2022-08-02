@@ -15,6 +15,8 @@ module.exports = {
         "jsx-quotes": ["error", "prefer-double"],
         "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
 
+        "multiline-ternary": ["error", "always-multiline"],
+
         // "for-direction" : "off",
         // "getter-return" : "error",
         // "no-await-in-loop" : "warn",
