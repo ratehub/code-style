@@ -60,6 +60,8 @@ These rules look for maintainability issues, particularly over-complicated desig
 * [[react/jsx-pascal-case]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-pascal-case.md): force following of idomatic practices within React, improving readability of code bases. Allow namespace is enabled to prevent errors on some of our existing code that uses it. (eg. WizardLayout)
 * [[react/jsx-tag-spacing]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-tag-spacing.md): using a consistent spacing within JSX element tags improves readability.
 * [[react/jsx-wrap-multilines]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/jsx-wrap-multilines.md): makes a Component easier to read by defining a consistent layout when reading render function.
+* [[react/jsx-max-props-per-line]](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md): Forces JSX to multi-line when we have more than one prop being passed for readability.
+* [[react/jsx-first-prop-new-line]](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md): In combination with jsx-max-props-per-line, this will make sure we always putting the multiple props on a new line after starting "<".
 
 
 ### Warnings:

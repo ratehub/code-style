@@ -60,7 +60,17 @@ module.exports = {
      "react/jsx-one-expression-per-line": "error",
      "react/jsx-pascal-case": ["error", { "allowNamespace": true }],
      "react/jsx-tag-spacing": "error",
-     "react/jsx-wrap-multilines": "error",
+     'react/jsx-max-props-per-line': ['error', { 'maximum': 1  }],
+     'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
+     'react/jsx-wrap-multilines': ['error', {
+        declaration: 'parens-new-line',
+        assignment: 'parens-new-line',
+        return: 'parens-new-line',
+        arrow: 'parens-new-line',
+        condition: 'parens-new-line',
+        logical: 'parens-new-line',
+        prop: 'parens-new-line'
+     }],
 
      // Readability - Warnings
      "react/boolean-prop-naming": "warn",

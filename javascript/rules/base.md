@@ -12,6 +12,7 @@ We have selected the [recommended](https://eslint.org/docs/rules/) rule set.  De
 * [[jsx-quotes]](https://eslint.org/docs/rules/jsx-quotes) | ERROR | Always use double-quotes in attributes.
 * [[comma-dangle]](https://eslint.org/docs/rules/jsx-quotes) | WARN | Prefer trailing commas when array / object elements are on multiple lines to improve clarity of diffs, prefer no trailing commas when everything is on one line.
 * [[no-multi-spaces]](https://eslint.org/docs/rules/no-multi-spaces) | ERROR | Multiple spaces when not used as indentation are almost always typos and should be avoided.
+* [[multiline-ternary]](https://eslint.org/docs/latest/rules/multiline-ternary) | ERROR | Ternaries are easier to read when the "?"/":" are on separate lines.
 
 ## Rule Notes
 * [[max-len]](https://eslint.org/docs/rules/max-len) | We had this warn on 120, however there are common cases (especially within JSX) where there is significant indenting, leading to the author having to format their code in a hard-to-read manner just to satisfy this rule. It was decided that this is best done by goveranance during code reviews, rather than an automated rule.
