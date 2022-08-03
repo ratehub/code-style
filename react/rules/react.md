@@ -41,7 +41,7 @@ These rules look for maintainability issues, particularly over-complicated desig
 
 ### Errors:
 * [[react/no-danger]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-danger.md): users of a Component should not use intimate knowledge of the inner-working of the Component to achieve a behaviour.
-* [[react/no-multi-comp]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-multi-comp.md): following one Component per file makes it easier to locate Components in a directory structure, and reduces time to read and understand contents of a file.
+* [[react/no-multi-comp]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-multi-comp.md): following one Component per file makes it easier to locate Components in a directory structure, and reduces time to read and understand contents of a file. Exception is made for private stateless components, which can be a useful to keep components easy to read at a glance, and the vast majority of the time, those sub-components have no value outside their specific parent usage.
 * [[react/no-unused-prop-types]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-unused-prop-types.md): if a prop type is defined, it should appear within the expected props.  Adds unnecessary confusion.
 * [[react/no-unused-state]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-unused-state.md): if a value is defined in state, it should be used.  Adds unnecessary confusion.
 * [[react/prefer-es6-class]](https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/prefer-es6-class.md): stateful Components should prefer ES6 definitions as they are easier to read.

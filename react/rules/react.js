@@ -42,7 +42,7 @@ module.exports = {
 
      // Readability - Errors
      "react/no-danger": "error",
-     "react/no-multi-comp": "error",
+     "react/no-multi-comp": ["error", { "ignoreStateless": true }],
      "react/no-unused-prop-types": "error",
      "react/no-unused-state": "error",
      "react/prefer-es6-class": "error",
@@ -76,5 +76,4 @@ module.exports = {
      "react/boolean-prop-naming": "warn",
      "react/jsx-handler-names": "off"
   }
-
 };
