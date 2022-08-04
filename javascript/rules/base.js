@@ -16,12 +16,6 @@ module.exports = {
         "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
 
         "multiline-ternary": ["error", "always-multiline"],
-
-        // "for-direction" : "off",
-        // "getter-return" : "error",
-        // "no-await-in-loop" : "warn",
-        // "no-compare-neg-zero" : "error",
-
-        // "accessor-pairs" : ["error", {"setWithoutGet" : true, "getWithoutSet" : false}],
+        "operator-linebreak": ["warn", "before"],       // This will be later made an error. Done this way to make migration easier.
     }
 }
