@@ -1,6 +1,6 @@
 # General Style Standards
 
-## Naming Standards
+## Naming
 * all `interface` should begin with I, and use PascalCasing (example: ICar, IEventSource)
 * all `class` should follow PascalCasing (example: EventEmitter) 
 
