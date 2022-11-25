@@ -7,7 +7,7 @@ We have a [#typescript Slack channel](https://ratehub.slack.com/archives/C04BZ8W
 
 ## FAQ
 
-### “When should I use type vs interface?”
+### “When should I use `type` vs `interface`?”
 this came from a [Slack Thread](https://ratehub.slack.com/archives/C04BZ8W3BPT/p1669388572909509) 
 
 Use `interface`:
