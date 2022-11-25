@@ -1,5 +1,5 @@
 # General Style Standards
-We have a [Slack channel](https://ratehub.slack.com/archives/C04BZ8W3BPT) dedicated to TypeScript best practices. Below here is a record of some discussions had there.
+We have a [#typescript Slack channel](https://ratehub.slack.com/archives/C04BZ8W3BPT) dedicated to TypeScript best practices. Below here is a record of some discussions had there.
 
 ## Naming
 * all `interface` should begin with I, and use PascalCasing (example: `IEventEmitter`)
