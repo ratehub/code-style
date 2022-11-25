@@ -1,8 +1,8 @@
 # General Style Standards
 
 ## Naming
-* all `interface` should begin with I, and use PascalCasing (example: ICar, IEventSource)
-* all `class` should follow PascalCasing (example: EventEmitter) 
+* all `interface` should begin with I, and use PascalCasing (example: `IEventEmitter`)
+* all `class` should follow PascalCasing (example: `EventEmitterKafka`) 
 
 ## FAQ
 
