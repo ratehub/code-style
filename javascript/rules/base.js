@@ -12,7 +12,6 @@ module.exports = {
         "comma-dangle": ["warn", "always-multiline"],
 
         "quotes": ["error", "single"],
-        "jsx-quotes": ["error", "prefer-double"],
         "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
 
         "multiline-ternary": ["error", "always-multiline"],

@@ -25,8 +25,8 @@ module.exports = {
    },
 
    "extends": [
-     '@ratehub/eslint-config-js',
      './rules/react',
+     './rules/javascript',
      './rules/jsx-a11y',
      './rules/jsx-control-statements'
    ].map(require.resolve),
