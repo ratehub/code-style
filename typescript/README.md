@@ -17,4 +17,3 @@ Use `interface`:
 Use `type`:
 * when you are defining typing information for things like local state, parameters, custom return types
 * `type` suggests this is just providing typing information for TS, and I don't need to worry about many different implementers of the same signature.
-* 
