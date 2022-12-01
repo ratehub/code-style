@@ -1,4 +1,4 @@
-# RateHub React Style guide
+# Ratehub React Style Guide
 *Javascript coding style focusing on readability and maintainability*
 
 ## Statement of Purpose
