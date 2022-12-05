@@ -1,0 +1,42 @@
+{
+  "name": "@ratehub/eslint-config-node",
+  "version": "1.0.0",
+  "description": "A set of linting rules for Ratehub projects using Node.js",
+  "main": "index.js",
+  "scripts": {
+    "release": "semantic-release --tag-format='${process.env.npm_package_name}-${version}'",
+    "release:dry": "semantic-release --dry-run --branches `git branch --show-current` --tag-format='${process.env.npm_package_name}-${version}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ratehub/code-style"
+  },
+  "bugs": {
+    "url": "https://github.com/ratehub/code-style/issues"
+  },
+  "homepage": "https://github.com/ratehub/code-style",
+  "keywords": [
+    "ratehub",
+    "eslint",
+    "eslintconfig",
+    "node"
+  ],
+  "author": "Jacob Foster",
+  "license": "MIT",
+  "peerDependencies": {
+    "@babel/eslint-parser": "^7.18.9",
+    "@ratehub/eslint-config-js": "^3.0.0",
+    "@ratehub/eslint-config-ts": "^1.0.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": ">= 8"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.5",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "semantic-release": "^19.0.3",
+    "semantic-release-monorepo": "^7.0.5"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "@ratehub/eslint-config-ts",
+  "version": "1.0.0",
+  "description": "ESLint config for use on Ratehub TypeScript projects",
+  "main": "index.js",
+  "scripts": {
+    "release": "semantic-release --tag-format='${process.env.npm_package_name}-${version}'",
+    "release:dry": "semantic-release --dry-run --branches `git branch --show-current` --tag-format='${process.env.npm_package_name}-${version}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ratehub/code-style"
+  },
+  "bugs": {
+    "url": "https://github.com/ratehub/code-style/issues"
+  },
+  "homepage": "https://github.com/ratehub/code-style",
+  "keywords": [
+    "ratehub",
+    "eslint",
+    "eslintconfig",
+    "typescript"
+  ],
+  "author": "Jacob Foster",
+  "license": "MIT",
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": ">= 8",
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.5",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "semantic-release": "^19.0.3",
+    "semantic-release-monorepo": "^7.0.5"
+  }
+}

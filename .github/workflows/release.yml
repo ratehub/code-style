@@ -6,8 +6,10 @@ on:
     # Only attempt publish when the package.json has changed
     paths:
       - 'javascript/**'
+      - 'typescript/**'
       - 'css/**'
       - 'react/**'
+      - 'node/**'
 jobs:
   publish:
     runs-on: ubuntu-latest
