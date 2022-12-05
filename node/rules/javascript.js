@@ -17,7 +17,13 @@ module.exports = {
     },
 
     "rules": {
-        "max-len": ["error", {"code": 120, "ignorePattern": true, "ignoreUrls": true, "ignoreStrings": true, "ignoreRegExpLiterals": true}],
+        "max-len": ["error", {
+            "code": 120,
+            "ignorePattern": true,
+            "ignoreUrls": true,
+            "ignoreStrings": true,
+            "ignoreRegExpLiterals": true
+        }],
         "semi": ["error", "always"],
     }
 };
