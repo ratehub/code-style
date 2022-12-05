@@ -4,7 +4,7 @@ module.exports = {
 
    "parserOptions": {
       "ecmaVersion": 2017,
-      "lib": ["ES2017"]
+      "lib": ["ES2017"],
    },
 
    "extends": [

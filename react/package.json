@@ -26,7 +26,7 @@
   "license": "MIT",
   "peerDependencies": {
     "@babel/eslint-parser": "^7.18.9",
-    "@ratehub/eslint-config-js": "^3.0.0",
+    "@ratehub/eslint-config-js": "^3.4.0",
     "eslint": ">= 8",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-jsx-control-statements": "^3.0.0",

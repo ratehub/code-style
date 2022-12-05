@@ -5,7 +5,9 @@
     "workspaces": [
         "css",
         "react",
-        "javascript"
+        "node",
+        "javascript",
+        "typescript"
     ],
     "scripts": {
         "release": "semantic-release",
