@@ -2,7 +2,7 @@ module.exports = {
 
    "extends": [
      './rules/javascript',
-     './rules/typescript'
+     './rules/typescript',
    ].map(require.resolve),
 
  };
