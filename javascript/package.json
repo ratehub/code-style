@@ -1,7 +1,7 @@
 {
   "name": "@ratehub/eslint-config-js",
   "version": "3.4.0",
-  "description": "ESLint config for use on RateHub JavaScript projects",
+  "description": "ESLint config for use on Ratehub JavaScript projects",
   "main": "index.js",
   "scripts": {
     "release": "semantic-release --tag-format='${process.env.npm_package_name}-${version}'",
