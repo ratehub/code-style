@@ -10,6 +10,7 @@ module.exports = {
         "array-bracket-spacing": ["error", "always"],
         "object-curly-spacing": ["error", "always"],
         "comma-dangle": ["warn", "always-multiline"],
+        "no-unused-vars": ["error", { "ignoreRestSiblings": false }],
 
         "quotes": ["error", "single"],
         "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
