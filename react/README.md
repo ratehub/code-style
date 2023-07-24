@@ -15,9 +15,9 @@ Plugins and rules have been selected with the assumption that the code will be u
 
 ## Rule Discussion
 A discussion of the applicability and classification of each rule is available for each plugin.
-* [[eslint-plugin-react]](https://github.com/ratehub/code-style/tree/master/react/rules/react.md)
-* [[eslint-plugin-jsx-a11y]](https://github.com/ratehub/code-style/tree/master/react/rules/jsx-control-statements.md)
-* [[eslint-plugin-jsx-control-statements]](https://github.com/ratehub/code-style/tree/master/react/rules/jsx-a11y.md)
+* [[eslint-plugin-react]](https://github.com/ratehub/code-style/tree/main/react/rules/react.md)
+* [[eslint-plugin-jsx-a11y]](https://github.com/ratehub/code-style/tree/main/react/rules/jsx-control-statements.md)
+* [[eslint-plugin-jsx-control-statements]](https://github.com/ratehub/code-style/tree/main/react/rules/jsx-a11y.md)
 
 ## Suggesting Changes
 If disagreement with a rule's classification or changes to the plugins chosen are desired, please open a [ticket](https://github.com/ratehub/code-style/issues).  Pull requests against this repository require changes to the associated markup document so the rationale and rule configuration will stay in-sync.

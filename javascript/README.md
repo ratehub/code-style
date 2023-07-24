@@ -13,8 +13,8 @@ Plugins and rules have been selected with the assumption that the code will be u
 
 ## Rule Discussion
 A discussion of the applicability and classification of each rule is available for each plugin.
-* [eslint (base)](https://github.com/ratehub/code-style/tree/master/javascript/rules/base.md)
-* [eslint-plugin-import](https://github.com/ratehub/code-style/tree/master/javascript/rules/import.md)
+* [eslint (base)](https://github.com/ratehub/code-style/tree/main/javascript/rules/base.md)
+* [eslint-plugin-import](https://github.com/ratehub/code-style/tree/main/javascript/rules/import.md)
 
 ## Suggesting Changes
 If disagreement with a rule's classification or changes to the plugins chosen are desired, please open a [ticket](https://github.com/ratehub/code-style/issues).  Pull requests against this repository require changes to the associated markup document so the rationale and rule configuration will stay in-sync.

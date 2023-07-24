@@ -2,7 +2,7 @@ name: Auto Release to PackageCloud
 on:
   push:
     branches:
-      - master
+      - main
     # Only attempt publish when the package.json has changed
     paths:
       - 'javascript/**'
@@ -22,7 +22,7 @@ jobs:
           # Required for commit analyzer to access git history
           fetch-depth: 0
           # needs to be false, otherwise the generated GITHUB_TOKEN will interfere
-          # with the global when used to write to the master (protected) branch
+          # with the global when used to write to the main (protected) branch
           # https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md#pushing-packagejson-changes-to-a-master-branch
           persist-credentials: false
 
@@ -43,7 +43,7 @@ jobs:
         run: npm run release --workspaces
         env:
           GITHUB_TOKEN: ${{ secrets.GH_RATEHUB_MACHINE_TOKEN }}
-          # NODE_AUTH_TOKEN must be set in step context (and not at job/workflow 
+          # NODE_AUTH_TOKEN must be set in step context (and not at job/workflow
           # context) or it will be override by the default, causing 401s.
           NODE_AUTH_TOKEN: ${{ secrets.PACKAGECLOUD_TOKEN }}
           # Tell `npm publish` to use config created in previous setup.
