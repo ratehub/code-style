@@ -5,11 +5,11 @@ on:
       - main
     # Only attempt publish when the package.json has changed
     paths:
-      - 'javascript/**'
-      - 'typescript/**'
       - 'css/**'
-      - 'react/**'
+      - 'javascript/**'
       - 'node/**'
+      - 'react/**'
+      - 'typescript/**'
 jobs:
   publish:
     runs-on: ubuntu-latest
