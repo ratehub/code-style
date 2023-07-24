@@ -1,6 +1,6 @@
 {
   "name": "@ratehub/eslint-config-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of linting rules for Ratehub projects using Node.js",
   "main": "index.js",
   "scripts": {
