@@ -11,7 +11,8 @@ module.exports = {
         "object-curly-spacing": ["error", "always"],
         "comma-dangle": ["warn", "always-multiline"],
         "no-unused-vars": ["error", { "ignoreRestSiblings": false }],
-
+        "brace-style": ["error", "1tbs"],
+    
         "quotes": ["error", "single"],
         "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
 
