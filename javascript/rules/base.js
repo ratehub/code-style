@@ -9,7 +9,13 @@ module.exports = {
         "keyword-spacing": ["error", { "before": true, "after": true }],
         "array-bracket-spacing": ["error", "always"],
         "object-curly-spacing": ["error", "always"],
-        "comma-dangle": ["warn", "always-multiline"],
+        "comma-dangle": ["warn", ["warn", {
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "always-multiline",
+            "exports": "always-multiline",
+            "functions": "only-multiline",
+         }],
         "no-unused-vars": ["error", { "ignoreRestSiblings": true }],
         "brace-style": ["error", "1tbs"],
     
