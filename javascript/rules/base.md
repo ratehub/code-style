@@ -14,6 +14,8 @@ We have selected the [recommended](https://eslint.org/docs/rules/) rule set.  De
 * [[multiline-ternary]](https://eslint.org/docs/latest/rules/multiline-ternary) | ERROR | Ternaries are easier to read when the "?"/":" are on separate lines.
 * [[operator-linebreak]](https://eslint.org/docs/latest/rules/operator-linebreak#before) | WARN | When doing operations across multiple lines, it's important to understand the operator which connects the line with the previous ones. When left at the end of the previous line, this is easy to miss and not available at a glance.
 * [[no-unused-vars#ignorerestsiblings]](https://eslint.org/docs/latest/rules/no-unused-vars#ignorerestsiblings): Allows no unused variable lint rule to be ignored when using rest spread (`...foo`). This mainly is for cases where we omit some properties from an object when destructuring it.
+* [[max-params]](https://eslint.org/docs/latest/rules/max-params): Enforce a maximum number of parameters in function definitions. This is to prevent having to memorize and potential bugs when passing params.
+* [[no-shadow]](https://eslint.org/docs/latest/rules/no-shadow): Disallow variable declarations from shadowing variables declared in the outer scope. Prevent bugs where references might be to a differently scoped variable with the same name; 
 * [[brace-style]](https://eslint.org/docs/latest/rules/brace-style): The "one true brace style" is the agreed upon brace style for consistency and should always be adjusted in accordance to the bracing style.
 
 ## Rule Notes
