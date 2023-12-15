@@ -1,6 +1,6 @@
 {
   "name": "@ratehub/eslint-config-ts",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "ESLint config for use on Ratehub TypeScript projects",
   "main": "index.js",
   "scripts": {
