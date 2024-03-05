@@ -34,6 +34,8 @@
     "@semantic-release/github": "^8.0.5",
     "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
+    "@stylistic/eslint-plugin": "^1.6.0",
+    "@stylistic/eslint-plugin-migrate": "^1.6.0",
     "semantic-release": "^19.0.3",
     "semantic-release-monorepo": "^7.0.5"
   }
