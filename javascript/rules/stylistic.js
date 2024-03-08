@@ -23,7 +23,6 @@ module.exports = {
         '@stylistic/js/space-in-parens': [ 'error', 'never' ],
         '@stylistic/js/space-before-function-paren': [ 'error', 'never' ],
 
-
         '@stylistic/js/multiline-ternary': [ 'error', 'always-multiline' ],
         '@stylistic/js/operator-linebreak': [ 'warn', 'before' ],       // This will be later made an error. Done this way to make migration easier.
     },
