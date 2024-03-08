@@ -1,4 +1,4 @@
-# Ratehub JavaScript Style Guide
+# Ratehub JavaScript Style Guide 
 *Javascript coding style focusing on readability and maintainability*
 
 ## Statement of Purpose
