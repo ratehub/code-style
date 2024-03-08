@@ -8,6 +8,7 @@ We have selected the [recommended](https://eslint.org/docs/rules/) rule set.  De
 * [[max-params]](https://eslint.org/docs/latest/rules/max-params): Enforce a maximum number of parameters in function definitions. This is to prevent having to memorize and potential bugs when passing params.
 * [[no-shadow]](https://eslint.org/docs/latest/rules/no-shadow): Disallow variable declarations from shadowing variables declared in the outer scope. Prevent bugs where references might be to a differently scoped variable with the same name; 
 
+
 <!-- 
 | Rule Name | Class | Discussion |
 | --- | :---: | --- |
