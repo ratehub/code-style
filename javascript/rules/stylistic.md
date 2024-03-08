@@ -9,8 +9,11 @@ We have selected the [default](https://eslint.style/packages/js) rule set.  Devi
 * [[object-curly-spacing]](https://eslint.style/rules/js/object-curly-spacing) | ERROR | Provides consistent spacing around object properties in object literals and destructured objects. This received 100% consensus from the front-end team at the time of addition and especially helps us in JSX as we commonly destructure component props.
 * [[comma-dangle]](https://eslint.style/rules/js/comma-dangle) | WARN | Prefer trailing commas when array / object elements are on multiple lines to improve clarity of diffs, prefer no trailing commas when everything is on one line.
 * [[brace-style]](https://eslint.org/docs/latest/rules/brace-style): The "one true brace style" is the agreed upon brace style for consistency and should always be adjusted in accordance to the bracing style.
+* [[semi]](https://eslint.org/docs/latest/rules/semi) | ERROR | The heavily contested semi-colon rule, decided by voting to always use semi-colon for consistency.
 * [[quotes]](https://eslint.style/rules/js/quotes) | ERROR | Prefer to use single quotes in strings except where interpolating with backticks.
 * [[no-multi-spaces]](https://eslint.style/rules/js/no-multi-spaces) | ERROR | Multiple spaces when not used as indentation are almost always typos and should be avoided.
+* [[space-in-parens]](https://eslint.style/rules/js/space-in-parens) | ERROR | Parentheses should never have spaces inside, this way it ensures consistency and avoids typo of only 1 space e.g. `( a + b)`.
+* [[space-before-function-paren]](https://eslint.style/rules/js/space-before-function-paren) | ERROR | The parentheses for function params should never have spaces before it.
 * [[multiline-ternary]](https://eslint.org/docs/latest/rules/multiline-ternary) | ERROR | Ternaries are easier to read when the "?"/":" are on separate lines.
 * [[operator-linebreak]](https://eslint.org/docs/latest/rules/operator-linebreak#before) | WARN | When doing operations across multiple lines, it's important to understand the operator which connects the line with the previous ones. When left at the end of the previous line, this is easy to miss and not available at a glance.
 
