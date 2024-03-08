@@ -16,11 +16,15 @@ module.exports = {
             'functions': 'only-multiline',
         } ],
         '@stylistic/js/brace-style': [ 'error', '1tbs' ],
+        '@stylistic/js/semi': [ 'error', 'always' ],
     
         '@stylistic/js/quotes': [ 'error', 'single' ],
         '@stylistic/js/no-multi-spaces': [ 'error', { 'ignoreEOLComments': true } ],
+        '@stylistic/js/space-in-parens': [ 'error', 'never' ],
+        '@stylistic/js/space-before-function-paren': [ 'error', 'never' ],
+
 
         '@stylistic/js/multiline-ternary': [ 'error', 'always-multiline' ],
         '@stylistic/js/operator-linebreak': [ 'warn', 'before' ],       // This will be later made an error. Done this way to make migration easier.
     },
-}
+};
