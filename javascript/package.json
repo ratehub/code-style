@@ -25,7 +25,9 @@
   "license": "MIT",
   "peerDependencies": {
     "@babel/eslint-parser": "^7.18.9",
-    "eslint": ">= 8",
+    "eslint": ">= 8"
+  },
+  "dependencies": {
     "eslint-plugin-import": "^2.26.0",
     "@stylistic/eslint-plugin": "^1.6.0"
   },
