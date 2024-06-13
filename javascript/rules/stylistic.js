@@ -21,7 +21,8 @@ module.exports = {
         '@stylistic/js/quotes': [ 'error', 'single' ],
         '@stylistic/js/no-multi-spaces': [ 'error', { 'ignoreEOLComments': true } ],
         '@stylistic/js/space-in-parens': [ 'error', 'never' ],
-        '@stylistic/js/space-before-function-paren': [ 'error', 'never' ],
+        '@stylistic/js/space-before-function-paren': [ 'error', { 'anonymous': 'never', 'named': 'never', 'asyncArrow': 'always' } ],
+        '@stylistic/js/arrow-spacing': [ 'error', { 'before': true, 'after': true } ],
 
         '@stylistic/js/multiline-ternary': [ 'error', 'always-multiline' ],
         '@stylistic/js/operator-linebreak': [ 'warn', 'before' ],       // This will be later made an error. Done this way to make migration easier.

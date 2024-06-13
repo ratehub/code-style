@@ -16,7 +16,6 @@ module.exports = {
      // Code Smells - Errors
      "react/button-has-type": "error",
      "react/no-children-prop": "error",
-     "react/default-props-match-prop-types": "error",
      "react/no-access-state-in-setstate": "error",
      "react/no-did-update-set-state": "error",
      "react/no-direct-mutation-state": "error",
@@ -47,7 +46,6 @@ module.exports = {
      "react/no-unused-state": "error",
      "react/prefer-es6-class": "error",
      "react/prop-types": "error",
-     "react/require-default-props": "error",
      "react/self-closing-comp": "error",
      "react/sort-comp": "error",
      "react/jsx-closing-bracket-location": "error",
