@@ -1,6 +1,6 @@
 {
   "name": "@ratehub/eslint-config-js",
-  "version": "3.6.1",
+  "version": "3.7.0",
   "description": "ESLint config for use on Ratehub JavaScript projects",
   "main": "index.js",
   "scripts": {
